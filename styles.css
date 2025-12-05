@@ -76,6 +76,18 @@ pre {
     border: 1px solid #333;
 }
 
+/* ======= COMENTARIOS DE SCRIPT ======= */
+.comentario {
+    background: #3a3a4d;
+    padding: 12px;
+    margin-top: 10px;
+    border-left: 4px solid #ffca28;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+}
+
+
 /* ======= VIDEOS ======= */
 .video {
     margin-top: 15px;
