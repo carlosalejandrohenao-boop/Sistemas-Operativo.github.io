@@ -53,20 +53,26 @@ if [ $? -eq 0 ]; then
 else
   zenity --warning --title="Cancelado"
 fi
-     </pre> Este script utiliza Zenity para mostrar cuadros de diálogo gráficos al usuario. Realiza la 
+     </pre> 
+
+      <div class="comentario">
+      Este script utiliza Zenity para mostrar cuadros de diálogo gráficos al usuario. Realiza la 
             limpieza de archivos temporales si el usuario acepta la acción. </p>
-    </section>
+    </div>
 
       <h3>Consola</h3>
-      <pre><code> 
+      <pre> 
 #!/bin/bash
 rm -rf /tmp/
 rm -rf ~/.local/share/Trash/files/*
 rm -rf ~/.cache/*
 echo "Limpieza realizada."
-     </pre>Este script realiza exactamente la misma limpieza pero ejecutado desde la terminal sin 
-          entorno gráfico. </p>
-    </section>
+     </pre>
+    
+    <div class="comentario">
+    Este script realiza exactamente la misma limpieza pero ejecutado desde la terminal sin 
+          entorno gráfico. 
+    </div>
 
     <section id="docker">
       <h2>Docker y Kubernetes</h2>
