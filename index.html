@@ -41,7 +41,7 @@
     <section id="scripts">
       <h2>Scripts de Automatización</h2>
       <h3>Zenity (gráfico)</h3>
-      <pre><code>
+      <pre><code> class="bash"
 zenity --question --title="Limpieza del sistema" --text="¿Quieres limpiar los archivos temporales y la papelera?"
 if [ $? -eq 0 ]; then
   rm -rf /tmp/* ~/.cache/*
@@ -53,7 +53,7 @@ fi
       </code></pre>
 
       <h3>Consola</h3>
-      <pre><code>
+      <pre><code> class="bash"
 #!/bin/bash
 rm -rf /tmp/
 rm -rf ~/.local/share/Trash/files/*
@@ -74,7 +74,7 @@ CMD ["bash"]
       </code></pre>
 
       <h3>Pod Kubernetes (ejemplo)</h3>
-      <pre><code>
+      <pre><code> class="bash"
 apiVersion: v1
 kind: Pod
 metadata:
