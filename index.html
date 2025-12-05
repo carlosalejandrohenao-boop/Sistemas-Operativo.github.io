@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proyecto Final - Sistemas Operativos</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <h1>Proyecto Final - Sistemas Operativos</h1>
+    <p>Instalación, configuración y automatización con Linux, Docker y Kubernetes</p>
+    <nav>
+      <a href="#portada">Portada</a> |
+      <a href="#actividades">Actividades</a> |
+      <a href="#scripts">Scripts</a> |
+      <a href="#docker">Docker y Kubernetes</a> |
+      <a href="#presentacion">Presentación</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="portada">
+      <h2>Portada</h2>
+      <p>Este sitio documenta el desarrollo del proyecto final... (edita aquí)</p>
+    </section>
+
+    <section id="actividades">
+      <h2>Actividades Realizadas</h2>
+      <ul>
+        <li>Instalación Gráfica</li>
+        <li>Instalación en Consola</li>
+        <li>Instalación de editores</li>
+        <li>Script gráfico y en consola</li>
+        <li>Docker: instalación, imagen y contenedor</li>
+        <li>Docker Hub: publicación</li>
+        <li>Kubernetes: pod y deployment</li>
+      </ul>
+    </section>
+
+    <section id="scripts">
+      <h2>Scripts de Automatización</h2>
+      <h3>Zenity (gráfico)</h3>
+      <pre><code>
+zenity --question --title="Limpieza del sistema" --text="¿Quieres limpiar los archivos temporales y la papelera?"
+if [ $? -eq 0 ]; then
+  rm -rf /tmp/* ~/.cache/*
+  rm -rf ~/.local/share/Trash/files/* ~/.local/share/Trash/info/*
+  zenity --info --title="Limpieza realizada" --text="Los archivos temporales han sido eliminados"
+else
+  zenity --warning --title="Cancelado"
+fi
+      </code></pre>
+
+      <h3>Consola</h3>
+      <pre><code>
+#!/bin/bash
+rm -rf /tmp/
+rm -rf ~/.local/share/Trash/files/*
+rm -rf ~/.cache/*
+echo "Limpieza realizada."
+      </code></pre>
+    </section>
+
+    <section id="docker">
+      <h2>Docker y Kubernetes</h2>
+      <h3>Dockerfile (ejemplo)</h3>
+      <pre><code>
+FROM ubuntu:22.04
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install -y wget curl git nano vim openjdk-17-jdk
+CMD ["bash"]
+      </code></pre>
+
+      <h3>Pod Kubernetes (ejemplo)</h3>
+      <pre><code>
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-linux-pod
+spec:
+  containers:
+  - name: ubuntu-container
+    image: quintanasebastian/docker-dev-copia:latest
+    command: ["sleep","infinity"]
+      </code></pre>
+    </section>
+
+    <section id="presentacion">
+      <h2>Presentación Final - Videos del Proyecto</h2>
+
+      <ol>
+        <li>Instalación en entorno gráfico - Manjaro Xfce
+          <!-- ejemplo de video embebido desde YouTube -->
+          <div class="video">
+            <!-- reemplaza VIDEO_ID por el id real de YouTube -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
+                    title="Video 1" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </li>
+
+        <li>Instalación de navegadores Brave - Chrome
+          <!-- o si guardas localmente en assets/videos/ -->
+          <!-- <video controls src="assets/videos/instalacion-navegadores.mp4"></video> -->
+        </li>
+
+        <!-- añade más items de la lista según necesites -->
+      </ol>
+
+      <p>Integrantes: Sebastian Quintana Bonilla, Brayan Herney Zuluaga Zuñiga</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Proyecto Final - Sistemas Operativos</p>
+  </footer>
+</body>
+</html>
