@@ -26,6 +26,8 @@ header p {
     margin-top: 5px;
 }
 
+
+
 /* ======= MENÚ ======= */
 nav a {
     color: #ffe082;
@@ -170,4 +172,39 @@ footer {
         height: 200px; /* Se ve mejor en celulares */
     }
 }
+
+/* === CAJA PARA EL ENLACE DE GOOGLE DRIVE === */
+.drive-box {
+    background: #242436;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+}
+
+.drive-box h3 {
+    color: #ffca28;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.drive-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #4a148c;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    transition: 0.2s;
+}
+
+.drive-button:hover {
+    background: #6a1bb8;
+    transform: scale(1.05);
+}
+
 
