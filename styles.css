@@ -150,3 +150,10 @@ footer {
     letter-spacing: 0.5px;
     color: #dcdcdc;
 }
+
+/* === HACER LOS VIDEOS RESPONSIVOS === */
+.video-responsive {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
