@@ -206,5 +206,55 @@ footer {
     background: #6a1bb8;
     transform: scale(1.05);
 }
+/* CAJA DEL ENLACE DE GOOGLE DRIVE */
+.drive-box {
+    background: #242436;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+}
+
+.drive-box h3 {
+    color: #ffca28;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+/* BOTÓN */
+.drive-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 25px;
+    background: #4a148c;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    transition: 0.25s ease-in-out;
+    font-size: 1.1rem;
+}
+
+/* ICONO DE DRIVE */
+.drive-icon {
+    width: 28px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+/* EFECTOS */
+.drive-button:hover {
+    background: #6a1bb8;
+    transform: scale(1.08);
+}
+
+.drive-button:hover .drive-icon {
+    transform: rotate(12deg) scale(1.1);
+}
+
 
 
