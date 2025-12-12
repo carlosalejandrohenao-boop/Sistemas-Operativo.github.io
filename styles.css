@@ -125,20 +125,28 @@ footer {
 
 /* ======= SEPARADOR DE INTEGRANTES ======= */
 .integrantes-box {
-    background: #1a1a28;
-    padding: 20px;
-    border-radius: 12px;
+    background: #171722;
+    padding: 30px;
+    border-radius: 18px;
     text-align: center;
-    margin-top: 40px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    margin-top: 80px;  /* ← Aumenté la separación respecto a los videos */
+    margin-bottom: 40px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    border: 1px solid #2e2e40;
 }
 
 .integrantes-box h3 {
     color: #ffca28;
-    margin-bottom: 12px;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffca28;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .integrantes-box p {
-    margin: 4px 0;
+    margin: 6px 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    color: #dcdcdc;
 }
-
