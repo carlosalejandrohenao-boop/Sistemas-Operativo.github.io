@@ -107,3 +107,38 @@ footer {
     margin-top: 40px;
     color: #aaa;
 }
+/* ======= CAJAS DE VIDEOS ======= */
+.video-box {
+    background: #242436;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.video-box h3 {
+    color: #ffca28;
+    margin-bottom: 12px;
+    border-left: 4px solid #ffca28;
+    padding-left: 8px;
+}
+
+/* ======= SEPARADOR DE INTEGRANTES ======= */
+.integrantes-box {
+    background: #1a1a28;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.integrantes-box h3 {
+    color: #ffca28;
+    margin-bottom: 12px;
+}
+
+.integrantes-box p {
+    margin: 4px 0;
+}
+
